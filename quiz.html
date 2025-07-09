@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Full-Stack Beginner Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #34495e;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+    .question {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .answers {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 8px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    button:disabled {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+    }
+    #answers {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    #answers.hidden {
+      display: none;
+    }
+    ol {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Full Stack Beginner Quiz</h1>
+
+  <h2>Part 1: HTML &amp; CSS Instructions</h2>
+
+  <div class="question">1. Write a paragraph describing yourself.</div>
+  <textarea></textarea>
+
+  <div class="question">2. Insert an image using the &lt;img&gt; tag.</div>
+  <textarea></textarea>
+
+  <div class="question">3. Create an unordered list with three fruits.</div>
+  <textarea></textarea>
+
+  <div class="question">4. Create an ordered list: Monday, Tuesday, Wednesday.</div>
+  <textarea></textarea>
+
+  <div class="question">5. CSS: Change the text color of a paragraph to red.</div>
+  <textarea></textarea>
+
+  <div class="question">6. CSS: Insert a comment inside your stylesheet.</div>
+  <textarea></textarea>
+
+  <div class="question">7. CSS: Add spacing between navbar items.</div>
+  <textarea></textarea>
+
+  <h2>Part 2: JavaScript (Multiple Choice)</h2>
+
+  <div class="question">8. What is the difference between var, let, and const?</div>
+  <div class="answers">
+    <input type="radio" name="q8" value="a" id="q8a"><label for="q8a"> a) They all do the same thing</label><br />
+    <input type="radio" name="q8" value="b" id="q8b"><label for="q8b"> b) let and const have block scope, var does not</label><br />
+    <input type="radio" name="q8" value="c" id="q8c"><label for="q8c"> c) const is for numbers only</label><br />
+  </div>
+
+  <div class="question">9. What is a closure in JavaScript?</div>
+  <div class="answers">
+    <input type="radio" name="q9" value="a" id="q9a"><label for="q9a"> a) A function inside a loop</label><br />
+    <input type="radio" name="q9" value="b" id="q9b"><label for="q9b"> b) A function that remembers its outer scope</label><br />
+    <input type="radio" name="q9" value="c" id="q9c"><label for="q9c"> c) A built-in browser function</label><br />
+  </div>
+
+  <div class="question">10. What does <code>this</code> refer to in JavaScript?</div>
+  <div class="answers">
+    <input type="radio" name="q10" value="a" id="q10a"><label for="q10a"> a) Always the window</label><br />
+    <input type="radio" name="q10" value="b" id="q10b"><label for="q10b"> b) The function itself</label><br />
+    <input type="radio" name="q10" value="c" id="q10c"><label for="q10c"> c) Depends on the context</label><br />
+  </div>
+
+  <div class="question">11. What are arrow functions?</div>
+  <div class="answers">
+    <input type="radio" name="q11" value="a" id="q11a"><label for="q11a"> a) Functions with arrows</label><br />
+    <input type="radio" name="q11" value="b" id="q11b"><label for="q11b"> b) A shorter way to write functions</label><br />
+    <input type="radio" name="q11" value="c" id="q11c"><label for="q11c"> c) Special loop functions</label><br />
+  </div>
+
+  <div class="question">12. What is localStorage used for?</div>
+  <div class="answers">
+    <input type="radio" name="q12" value="a" id="q12a"><label for="q12a"> a) Storing files</label><br />
+    <input type="radio" name="q12" value="b" id="q12b"><label for="q12b"> b) Temporarily storing user data in the browser</label><br />
+    <input type="radio" name="q12" value="c" id="q12c"><label for="q12c"> c) Saving passwords</label><br />
+  </div>
+
+  <div class="question">13. What does fetch() do?</div>
+  <div class="answers">
+    <input type="radio" name="q13" value="a" id="q13a"><label for="q13a"> a) Sends a file to the server</label><br />
+    <input type="radio" name="q13" value="b" id="q13b"><label for="q13b"> b) Retrieves data from a server</label><br />
+    <input type="radio" name="q13" value="c" id="q13c"><label for="q13c"> c) Stores HTML code</label><br />
+  </div>
+
+  <div class="question">14. What are REST APIs?</div>
+  <div class="answers">
+    <input type="radio" name="q14" value="a" id="q14a"><label for="q14a"> a) A way to build frontend UI</label><br />
+    <input type="radio" name="q14" value="b" id="q14b"><label for="q14b"> b) A design for building web APIs</label><br />
+    <input type="radio" name="q14" value="c" id="q14c"><label for="q14c"> c) JavaScript functions</label><br />
+  </div>
+
+  <div class="question">15. What does event delegation mean?</div>
+  <div class="answers">
+    <input type="radio" name="q15" value="a" id="q15a"><label for="q15a"> a) One element handles many child events</label><br />
+    <input type="radio" name="q15" value="b" id="q15b"><label for="q15b"> b) Giving events to buttons</label><br />
+    <input type="radio" name="q15" value="c" id="q15c"><label for="q15c"> c) Preventing page reload</label><br />
+  </div>
+
+  <h2>Part 3: Python (Multiple Choice)</h2>
+
+  <div class="question">16. What is Python?</div>
+  <div class="answers">
+    <input type="radio" name="q16" value="a" id="q16a"><label for="q16a"> a) A CSS framework</label><br />
+    <input type="radio" name="q16" value="b" id="q16b"><label for="q16b"> b) A backend programming language</label><br />
+    <input type="radio" name="q16" value="c" id="q16c"><label for="q16c"> c) A database</label><br />
+  </div>
+
+  <div class="question">17. How do you write a comment in Python?</div>
+  <div class="answers">
+    <input type="radio" name="q17" value="a" id="q17a"><label for="q17a"> a) // comment</label><br />
+    <input type="radio" name="q17" value="b" id="q17b"><label for="q17b"> b) &lt;!-- comment --&gt;</label><br />
+    <input type="radio" name="q17" value="c" id="q17c"><label for="q17c"> c) # comment</label><br />
+  </div>
+
+  <div class="question">18. What is a list in Python?</div>
+  <div class="answers">
+    <input type="radio" name="q18" value="a" id="q18a"><label for="q18a"> a) A group of items in []</label><br />
+    <input type="radio" name="q18" value="b" id="q18b"><label for="q18b"> b) A dictionary</label><br />
+    <input type="radio" name="q18" value="c" id="q18c"><label for="q18c"> c) A CSS rule</label><br />
+  </div>
+
+  <div class="question">19. How do you define a function in Python?</div>
+  <div class="answers">
+    <input type="radio" name="q19" value="a" id="q19a"><label for="q19a"> a) function greet() {}</label><br />
+    <input type="radio" name="q19" value="b" id="q19b"><label for="q19b"> b) def greet():</label><br />
+    <input type="radio" name="q19" value="c" id="q19c"><label for="q19c"> c) function = greet()</label><br />
+  </div>
+
+  <div class="question">20. What does <code>import</code> do in Python?</div>
+  <div class="answers">
+    <input type="radio" name="q20" value="a" id="q20a"><label for="q20a"> a) Creates a folder</label><br />
+    <input type="radio" name="q20" value="b" id="q20b"><label for="q20b"> b) Loads a module</label><br />
+    <input type="radio" name="q20" value="c" id="q20c"><label for="q20c"> c) Adds a comment</label><br />
+  </div>
+
+  <h2>Part 4: Django (Multiple Choice)</h2>
+
+  <div class="question">21. What is Django?</div>
+  <div class="answers">
+    <input type="radio" name="q21" value="a" id="q21a"><label for="q21a"> a) JavaScript library</label><br />
+    <input type="radio" name="q21" value="b" id="q21b"><label for="q21b"> b) Python web framework</label><br />
+    <input type="radio" name="q21" value="c" id="q21c"><label for="q21c"> c) SQL tool</label><br />
+  </div>
+
+  <div class="question">22. What is the role of <code>models.py</code>?</div>
+  <div class="answers">
+    <input type="radio" name="q22" value="a" id="q22a"><label for="q22a"> a) Defines the URL path</label><br />
+    <input type="radio" name="q22" value="b" id="q22b"><label for="q22b"> b) Stores HTML</label><br />
+    <input type="radio" name="q22" value="c" id="q22c"><label for="q22c"> c) Defines database structure</label><br />
+  </div>
+
+  <div class="question">23. What is the purpose of <code>views.py</code>?</div>
+  <div class="answers">
+    <input type="radio" name="q23" value="a" id="q23a"><label for="q23a"> a) Stores data</label><br />
+    <input type="radio" name="q23" value="b" id="q23b"><label for="q23b"> b) Renders responses to browser</label><br />
+    <input type="radio" name="q23" value="c" id="q23c"><label for="q23c"> c) Manages CSS</label><br />
+  </div>
+
+  <div class="question">24. What command starts a Django project?</div>
+  <div class="answers">
+    <input type="radio" name="q24" value="a" id="q24a"><label for="q24a"> a) django run</label><br />
+    <input type="radio" name="q24" value="b" id="q24b"><label for="q24b"> b) django-admin startproject</label><br />
+    <input type="radio" name="q24" value="c" id="q24c"><label for="q24c"> c) python startproject</label><br />
+  </div>
+
+  <div class="question">25. What does <code>admin.site.register()</code> do?</div>
+  <div class="answers">
+    <input type="radio" name="q25" value="a" id="q25a"><label for="q25a"> a) Registers admin</label><br />
+    <input type="radio" name="q25" value="b" id="q25b"><label for="q25b"> b) Adds models to Django admin</label><br />
+    <input type="radio" name="q25" value="c" id="q25c"><label for="q25c"> c) Starts server</label><br />
+  </div>
+
+  <h2>Part 5: React (Multiple Choice)</h2>
+
+  <div class="question">26. What is the virtual DOM?</div>
+  <div class="answers">
+    <input type="radio" name="q26" value="a" id="q26a"><label for="q26a"> a) Browser memory</label><br />
+    <input type="radio" name="q26" value="b" id="q26b"><label for="q26b"> b) Lightweight copy of real DOM</label><br />
+    <input type="radio" name="q26" value="c" id="q26c"><label for="q26c"> c) Virtual page on server</label><br />
+  </div>
+
+  <div class="question">27. What does useState do in React?</div>
+  <div class="answers">
+    <input type="radio" name="q27" value="a" id="q27a"><label for="q27a"> a) Stores global data</label><br />
+    <input type="radio" name="q27" value="b" id="q27b"><label for="q27b"> b) Handles component state</label><br />
+    <input type="radio" name="q27" value="c" id="q27c"><label for="q27c"> c) Loads styles</label><br />
+  </div>
+
+  <div class="question">28. What is a prop in React?</div>
+  <div class="answers">
+    <input type="radio" name="q28" value="a" id="q28a"><label for="q28a"> a) A CSS class</label><br />
+    <input type="radio" name="q28" value="b" id="q28b"><label for="q28b"> b) A function</label><br />
+    <input type="radio" name="q28" value="c" id="q28c"><label for="q28c"> c) Data passed to components</label><br />
+  </div>
+
+  <div class="question">29. What is React Context used for?</div>
+  <div class="answers">
+    <input type="radio" name="q29" value="a" id="q29a"><label for="q29a"> a) Form validation</label><br />
+    <input type="radio" name="q29" value="b" id="q29b"><label for="q29b"> b) Managing global state</label><br />
+    <input type="radio" name="q29" value="c" id="q29c"><label for="q29c"> c) Adding styles</label><br />
+  </div>
+
+  <div class="question">30. What is useEffect used for?</div>
+  <div class="answers">
+    <input type="radio" name="q30" value="a" id="q30a"><label for="q30a"> a) Add images</label><br />
+    <input type="radio" name="q30" value="b" id="q30b"><label for="q30b"> b) Manage side effects</label><br />
+    <input type="radio" name="q30" value="c" id="q30c"><label for="q30c"> c) Render pages</label><br />
+  </div>
+
+  <button disabled id="showAnswersBtn">Show Answers</button>
+
+  <div id="answers" class="hidden">
+    <h2>Answer Key</h2>
+    <ol>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+      <li>b</li>
+      <li>b</li>
+      <li>c</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+      <li>a</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>c</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>b</li>
+      <li>c</li>
+      <li>b</li>
+      <li>b</li>
+    </ol>
+  </div>
+
+  <script>
+    const showBtn = document.getElementById("showAnswersBtn");
+    showBtn.disabled = true;
+
+    // Collect unique question names from radio inputs dynamically
+    const radios = document.querySelectorAll("input[type='radio']");
+    const questionNames = [...new Set(Array.from(radios).map(radio => radio.name))];
+
+    function checkCompletion() {
+      const answeredQuestions = new Set();
+
+      radios.forEach(radio => {
+        if (radio.checked) answeredQuestions.add(radio.name);
+      });
+
+      const allTextareas = document.querySelectorAll("textarea");
+      const allTextFilled = Array.from(allTextareas).every(textarea => textarea.value.trim().length > 0);
+
+      // Enable button only if all questions answered and all textareas filled
+      if (answeredQuestions.size === questionNames.length && allTextFilled) {
+        showBtn.disabled = false;
+      } else {
+        showBtn.disabled = true;
+      }
+    }
+
+    // Attach event listeners to radios and textareas
+    radios.forEach(radio => radio.addEventListener("change", checkCompletion));
+    document.querySelectorAll("textarea").forEach(textarea => textarea.addEventListener("input", checkCompletion));
+
+    // Toggle answer key visibility on button click
+    showBtn.addEventListener("click", () => {
+      const answersDiv = document.getElementById("answers");
+      answersDiv.classList.toggle("hidden");
+      // Optional: scroll to answers
+      if (!answersDiv.classList.contains("hidden")) {
+        answersDiv.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script>
+</body>
+</html>
